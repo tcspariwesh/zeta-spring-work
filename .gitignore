@@ -1,0 +1,45 @@
+# Maven
+target/
+# Gradle
+build/
+.gradle/
+# Generic Java
+*.class
+
+# IDE-specific files and directories
+.idea/                 # IntelliJ IDEA project files
+.vscode/               # VS Code configuration
+.eclipse/              # Eclipse configuration
+.settings/             # Eclipse settings
+.project               # Eclipse project file
+.classpath             # Eclipse classpath file
+*.iml                  # IntelliJ IDEA module files
+.sts4-cache/           # Spring Tools Suite (STS) cache
+out/                   # Output directory
+
+# OS-specific files
+.DS_Store              # macOS files
+Thumbs.db              # Windows files
+
+# Package Files
+*.jar                  # Java Archive files
+*.war                  # Web Application Archive files
+*.ear                  # Enterprise Archive files
+
+# Logging
+logs/                  # Log directory
+*.log                  # Log files
+*.log.gz               # Compressed log files
+
+# Environment variables and secrets
+# Do not commit sensitive credentials!
+.env
+application.properties
+application.yml
+*.properties
+*.yml
+
+# Maven Wrapper
+# The .mvn directory and its contents can be committed for a consistent build environment
+# If you choose to ignore it:
+#.mvn/
