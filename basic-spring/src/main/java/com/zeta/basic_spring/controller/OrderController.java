@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.zeta.basic_spring.entity.OrderRequest;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/order")
 public class OrderController {
 	@PostMapping
-	OrderRequest addOrder(@RequestBody OrderRequest order) {
+	OrderRequest addOrder(@Valid @RequestBody OrderRequest order) {
 		System.out.println(order);
 		return order;
 	}
