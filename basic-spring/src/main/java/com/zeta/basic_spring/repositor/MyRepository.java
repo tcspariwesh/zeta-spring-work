@@ -1,9 +1,10 @@
 package com.zeta.basic_spring.repositor;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
-public class Repository {
+@Repository
+public class MyRepository {
 	public void saveOrder(){
 		System.out.println("saved");
 	}

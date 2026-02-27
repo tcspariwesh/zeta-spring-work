@@ -3,14 +3,16 @@ package com.zeta.basic_spring.entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-import com.zeta.basic_spring.repositor.Repository;
+import com.zeta.basic_spring.repositor.MyRepository;
 
 //@Scope("prototype")
-@Component
-public class Service {
+//@Component
+@Service
+public class MyService {
 	@Autowired
-	Repository repository;// dependency
+	MyRepository repository;// dependency
 
 	public void addOrder() {
 		// BL
